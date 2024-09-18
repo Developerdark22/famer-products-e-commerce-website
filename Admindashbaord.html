@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; display: flex; }
+        .sidebar { width: 250px; background: #2c3e50; color: white; padding: 1rem; }
+        .sidebar h2 { text-align: center; }
+        .sidebar a { color: white; display: block; padding: 10px; text-decoration: none; transition: background 0.3s; }
+        .sidebar a:hover { background: #34495e; }
+        .main { flex: 1; padding: 2rem; background: #ecf0f1; }
+        .header { background: #3498db; color: white; padding: 1rem; border-radius: 5px; margin-bottom: 1rem; }
+        .card { background: white; border: 1px solid #ddd; border-radius: 5px; padding: 1rem; margin: 1rem 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+        .footer { text-align: center; margin-top: 2rem; color: #7f8c8d; }
+        .metric { font-size: 24px; font-weight: bold; color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#overview"><i class="fas fa-tachometer-alt"></i> Overview</a>
+        <a href="#farmers"><i class="fas fa-users"></i> Farmers Management</a>
+        <a href="#products"><i class="fas fa-box"></i> Product Inventory</a>
+        <a href="#sales"><i class="fas fa-shopping-cart"></i> Sales & Orders</a>
+        <a href="#exports"><i class="fas fa-plane"></i> Export Operations</a>
+        <a href="#finance"><i class="fas fa-chart-line"></i> Financial Analytics</a>
+        <a href="#users"><i class="fas fa-user-shield"></i> User Management</a>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <section id="overview">
+            <h2>Overview</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p class="metric">$150,000</p>
+                </div>
+                <div class="card">
+                    <h3>Total Farmers</h3>
+                    <p class="metric">200</p>
+                </div>
+                <div class="card">
+                    <h3>Total Products</h3>
+                    <p class="metric">500</p>
+                </div>
+                <div class="card">
+                    <h3>Active Shipments</h3>
+                    <p class="metric">30</p>
+                </div>
+            </div>
+            <h3>Recent Activity</h3>
+            <div class="card">
+                <p>New farmers registered: 5</p>
+                <p>Recent shipments: 3</p>
+            </div>
+            <h3>Top Products</h3>
+            <div class="card">
+                <p>1. Product A</p>
+                <p>2. Product B</p>
+                <p>3. Product C</p>
+            </div>
+        </section>
+        <section id="farmers">
+            <h2>Farmers Management</h2>
+            <div class="card">
+                <p>Manage farmer profiles, view submitted products, track payments, and monitor delivery statuses.</p>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Product Inventory</h2>
+            <div class="card">
+                <p>List of all products, stock levels, and pricing.</p>
+            </div>
+        </section>
+        <section id="sales">
+            <h2>Sales & Orders</h2>
+            <div class="card">
+                <p>Track orders and view sales performance.</p>
+            </div>
+        </section>
+        <section id="exports">
+            <h2>Export Operations</h2>
+            <div class="card">
+                <p>Track shipments and manage logistics partners.</p>
+            </div>
+        </section>
+        <section id="finance">
+            <h2>Financial Analytics</h2>
+            <div class="card">
+                <p>View revenue breakdowns and monitor expenses.</p>
+            </div>
+        </section>
+        <section id="users">
+            <h2>User Management</h2>
+            <div class="card">
+                <p>Manage user roles and track login activity.</p>
+            </div>
+        </section>
+        <div class="footer">
+            <p>&copy; 2024 Dashboard. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
