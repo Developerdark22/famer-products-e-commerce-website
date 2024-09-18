@@ -13,7 +13,7 @@ A device (computer, tablet, or smartphone)
 Installation
 Clone the repository:
 Copy
-git clone https://github.com/yourusername/farmer-project.git
+git clone 
 Navigate to the project directory:
 Copy
 cd farmer-project
